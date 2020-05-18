@@ -6,7 +6,7 @@ import * as Colors from '../constants/Colors';
 Button.propTypes = {
 	type: PropTypes.string,
 	text: PropTypes.string.isRequired,
-	onClick: PropTypes.func,
+	onPress: PropTypes.func,
 	iconLeft: PropTypes.element,
 	iconRight: PropTypes.element,
 };
@@ -55,12 +55,14 @@ const ButtonText = styled.Text`
 `;
 
 const ButtonIconLeft = styled.View`
+	display: flex;
 	align-items: center;
 	margin-right: 10px;
 	vertical-align: middle;
 `;
 
 const ButtonIconRight = styled.View`
+	display: flex;
 	align-items: center;
 	margin-left: 10px;
 	vertical-align: middle;

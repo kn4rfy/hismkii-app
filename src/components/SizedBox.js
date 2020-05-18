@@ -13,10 +13,10 @@ SizedBox.defaultProps = {
 };
 
 export default function SizedBox(props) {
-	return <StyledButton {...props} />;
+	return <StyledView {...props} />;
 }
 
-const StyledButton = styled.div`
+const StyledView = styled.View`
 	width: ${props => props.width}px;
 	height: ${props => props.height}px;
 `;
